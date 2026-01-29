@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="icon" type="image/png" href="Artboard 326.png">
     <link rel="apple-touch-icon" href="Artboard 326.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Neue Montreal';
@@ -15,6 +18,7 @@
             font-weight: 400;
             font-style: normal;
         }
+
         @font-face {
             font-family: 'Neue Montreal';
             src: local('Neue Montreal Bold'), local('NeueMontreal-Bold');
@@ -24,6 +28,7 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="glass-nav">
@@ -32,12 +37,13 @@
                 <img src="Artboard 326.png" alt="ENSOL Logo" class="logo-image">
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#energy-solutions">Energy Solutions</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#sectors">Sectors</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#certification">Certification and Testing</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
             <button class="cta-btn">Get Quote</button>
             <button class="mobile-menu-btn">
@@ -49,39 +55,35 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="organic-shape shape-1"></div>
-            <div class="organic-shape shape-2"></div>
-            <div class="organic-shape shape-3"></div>
-            <canvas id="hero-canvas"></canvas>
+        <div class="hero-background-image">
+            <video autoplay muted loop playsinline poster="assets/hero_background_1769708948037.png"
+                class="hero-bg-video">
+                <source src="assets/videos/hero_video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-3d-container">
-            <div class="rotating-structure">
-                <div class="structure-face front"></div>
-                <div class="structure-face back"></div>
-                <div class="structure-face left"></div>
-                <div class="structure-face right"></div>
-                <div class="structure-face top"></div>
-                <div class="structure-face bottom"></div>
-            </div>
-        </div>
+
         <div class="hero-content">
             <div class="hero-badge glass-card-subtle">
                 <span class="pulse-dot"></span>
                 <span>40+ Years of Engineering Excellence</span>
             </div>
+
             <h1 class="hero-title">
-                <span class="line-1">Engineering India's</span>
-                <span class="line-2">Infrastructure</span>
-                <span class="line-3 highlight">Tomorrow</span>
+                <span class="line-1">Engineering Driven</span>
+                <span class="line-2">Infrastructure Solutions</span>
             </h1>
+
             <p class="hero-description">
-                One-stop manufacturing hub for power, solar, and infrastructure solutions. 
-                Simplifying procurement with quality, reliability, and competitive pricing.
+                Your trusted partner for comprehensive manufacturing and supply of high-grade transmission line
+                accessories, solar structures, and heavy engineering components. We power the nation's growth through
+                precision and reliability.
             </p>
+
             <div class="hero-buttons">
-                <a href="#products" class="btn btn-primary">
+                <a href="#energy-solutions" class="btn btn-primary">
                     <span>Explore Solutions</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -90,16 +92,17 @@
                     <i class="fas fa-play-circle"></i>
                 </a>
             </div>
+
             <div class="hero-stats">
                 <div class="stat-item glass-card-subtle">
                     <span class="stat-number" data-count="40">0</span>
                     <span class="stat-plus">+</span>
-                    <span class="stat-label">Years Legacy</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-item glass-card-subtle">
-                    <span class="stat-number" data-count="145">0</span>
-                    <span class="stat-unit">kV</span>
-                    <span class="stat-label">Isolators Range</span>
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-unit">L+</span>
+                    <span class="stat-label">Metric Tonnes Supplied</span>
                 </div>
                 <div class="stat-item glass-card-subtle">
                     <span class="stat-number" data-count="500">0</span>
@@ -127,8 +130,14 @@
             <div class="about-grid">
                 <div class="about-content">
                     <div class="about-text">
-                        <p class="lead">Power Line Accessories is a 40+ year old Indian manufacturing organization engaged in fabricated steel structures, electrical equipment, and heavy engineering solutions.</p>
-                        <p>We've evolved from a complex switch assembly unit into a multi-vertical infrastructure manufacturing banner, offering a wide range of products under one roof. Our purpose is simple: <strong>remove friction from procurement</strong> by becoming a single, dependable manufacturing and supply hub.</p>
+                        <p class="lead">Power Line Accessories is a 40+ year old Indian manufacturing organization
+                            engaged in fabricated steel structures, electrical equipment, and heavy engineering
+                            solutions.</p>
+                        <p>We've evolved from a complex switch assembly unit into a multi-vertical infrastructure
+                            manufacturing banner. With our <strong>state-of-the-art steel fabrication unit</strong>, we
+                            deliver precision-engineered components that form the backbone of industrial growth.</p>
+                        <p>Our purpose is simple: <strong>remove friction from procurement</strong> by becoming a
+                            single, dependable manufacturing and supply hub for all your infrastructure needs.</p>
                     </div>
                     <div class="values-grid">
                         <div class="value-card glass-card">
@@ -168,16 +177,10 @@
                     </div>
                     <div class="image-stack">
                         <div class="img-frame frame-1 glass-card">
-                            <div class="img-placeholder">
-                                <i class="fas fa-industry"></i>
-                                <span>Manufacturing Excellence</span>
-                            </div>
+                            <img src="assets/about_steel.png" alt="Advanced Steel Fabrication Unit">
                         </div>
                         <div class="img-frame frame-2 glass-card">
-                            <div class="img-placeholder">
-                                <i class="fas fa-solar-panel"></i>
-                                <span>Solar Infrastructure</span>
-                            </div>
+                            <img src="assets/about_engineering.png" alt="Precision Engineering Components">
                         </div>
                     </div>
                 </div>
@@ -187,245 +190,118 @@
         <div class="organic-shape about-shape-2"></div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products-section">
+    <!-- Energy Solutions Section (formerly Products) -->
+    <section id="energy-solutions" class="products-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag glass-card-subtle">Our Products</span>
-                <h2 class="section-title">Complete Infrastructure Solutions</h2>
-                <p class="section-subtitle">Everything you need, under one roof</p>
+                <span class="section-tag glass-card-subtle">Our Offerings</span>
+                <h2 class="section-title">Energy Solutions</h2>
+                <p class="section-subtitle">Comprehensive infrastructure components for every need</p>
             </div>
-            <div class="products-tabs">
-                <button class="tab-btn active" data-tab="solar">Solar & Power</button>
-                <button class="tab-btn" data-tab="infrastructure">Infrastructure</button>
-                <button class="tab-btn" data-tab="emerging">Heavy Engineering</button>
-            </div>
-            <div class="products-grid">
-                <!-- Solar & Power Products -->
-                <div class="product-card glass-card" data-category="solar">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <line x1="10" y1="90" x2="50" y2="10" stroke="currentColor" stroke-width="3"/>
-                            <line x1="50" y1="10" x2="90" y2="90" stroke="currentColor" stroke-width="3"/>
-                            <line x1="25" y1="50" x2="75" y2="50" stroke="currentColor" stroke-width="2"/>
-                            <line x1="35" y1="70" x2="65" y2="70" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+
+            <!-- Scrollable List Layout -->
+            <div class="solutions-list">
+
+                <!-- 1. Solar & Power -->
+                <div class="solution-block">
+                    <div class="solution-image">
+                        <img src="assets/sol_solar_power_1769708968489.png" alt="Solar & Power Solutions">
+                        <div class="solution-overlay"></div>
                     </div>
-                    <h3>C Channels</h3>
-                    <p>Premium C Channels for solar structures with precise galvanization and superior load-bearing capacity</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Hot-dip galvanized</li>
-                        <li><i class="fas fa-check"></i> Custom lengths available</li>
-                        <li><i class="fas fa-check"></i> IS:2062 compliant</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solution-content glass-card">
+                        <div class="product-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>Solar & Power</h3>
+                        <p>Complete structural solutions for solar parks and power transmission.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> C Channels & Mounting Structures</li>
+                            <li><i class="fas fa-check"></i> Lattice Towers</li>
+                            <li><i class="fas fa-check"></i> Short & Long Post Insulators</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="product-card glass-card" data-category="solar">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <polygon points="50,5 95,50 50,95 5,50" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="50" y1="5" x2="50" y2="95" stroke="currentColor" stroke-width="2"/>
-                            <line x1="5" y1="50" x2="95" y2="50" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                <!-- 2. Infrastructure -->
+                <div class="solution-block reverse">
+                    <div class="solution-image">
+                        <img src="assets/sol_infrastructure_retry_1769709168435.png" alt="Infrastructure Solutions">
+                        <div class="solution-overlay"></div>
                     </div>
-                    <h3>Lattice Structures</h3>
-                    <p>Engineered lattice structures for power distribution networks and substations</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> High tensile steel</li>
-                        <li><i class="fas fa-check"></i> Wind load optimized</li>
-                        <li><i class="fas fa-check"></i> Quick assembly design</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solution-content glass-card">
+                        <div class="product-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h3>Infrastructure</h3>
+                        <p>Robust steel components for bridges, highways, and civil engineering.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Crash Barriers</li>
+                            <li><i class="fas fa-check"></i> Galvanized Steel Beams</li>
+                            <li><i class="fas fa-check"></i> Street Light Poles</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="product-card glass-card" data-category="solar">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="50" y1="15" x2="50" y2="30" stroke="currentColor" stroke-width="4"/>
-                            <line x1="50" y1="70" x2="50" y2="85" stroke="currentColor" stroke-width="4"/>
-                            <line x1="15" y1="50" x2="30" y2="50" stroke="currentColor" stroke-width="4"/>
-                            <line x1="70" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="4"/>
-                        </svg>
+                <!-- 3. Heavy Engineering -->
+                <div class="solution-block">
+                    <div class="solution-image">
+                        <img src="assets/sol_heavy_engineering_1769708984618.png" alt="Heavy Engineering">
+                        <div class="solution-overlay"></div>
                     </div>
-                    <h3>Isolators & Disconnectors</h3>
-                    <p>High-performance isolators and disconnectors rated up to 145 kV for substations</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Up to 145 kV rating</li>
-                        <li><i class="fas fa-check"></i> Type tested</li>
-                        <li><i class="fas fa-check"></i> Low maintenance</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solution-content glass-card">
+                        <div class="product-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Heavy Engineering</h3>
+                        <p>Precision-engineered heavy machinery parts and fabrication.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Industrial Gears</li>
+                            <li><i class="fas fa-check"></i> Custom Machinery Parts</li>
+                            <li><i class="fas fa-check"></i> Heavy Duty Casings</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="product-card glass-card" data-category="solar">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <rect x="15" y="15" width="70" height="70" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="15" y1="40" x2="85" y2="40" stroke="currentColor" stroke-width="2"/>
-                            <line x1="15" y1="65" x2="85" y2="65" stroke="currentColor" stroke-width="2"/>
-                            <line x1="40" y1="15" x2="40" y2="85" stroke="currentColor" stroke-width="2"/>
-                            <line x1="65" y1="15" x2="65" y2="85" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                <!-- 4. Steel Fabrication -->
+                <div class="solution-block reverse">
+                    <div class="solution-image">
+                        <img src="assets/sol_steel_fabrication_1769709000405.png" alt="Steel Fabrication">
+                        <div class="solution-overlay"></div>
                     </div>
-                    <h3>Substation Equipment</h3>
-                    <p>Complete substation utility equipment and accessories for power infrastructure</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Turnkey solutions</li>
-                        <li><i class="fas fa-check"></i> BIS certified</li>
-                        <li><i class="fas fa-check"></i> Field-proven designs</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solution-content glass-card">
+                        <div class="product-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Steel Fabrication</h3>
+                        <p>Custom steel fabrication services for large-scale industrial projects.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Pre-Engineered Buildings (PEB)</li>
+                            <li><i class="fas fa-check"></i> Structural Steel Frames</li>
+                            <li><i class="fas fa-check"></i> Industrial Sheds</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Infrastructure Products -->
-                <div class="product-card glass-card hidden" data-category="infrastructure">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <ellipse cx="50" cy="30" rx="35" ry="15" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="15" y1="30" x2="15" y2="80" stroke="currentColor" stroke-width="3"/>
-                            <line x1="85" y1="30" x2="85" y2="80" stroke="currentColor" stroke-width="3"/>
-                            <ellipse cx="50" cy="80" rx="35" ry="15" fill="none" stroke="currentColor" stroke-width="3"/>
-                        </svg>
+                <!-- 5. Utility Equipment -->
+                <div class="solution-block">
+                    <div class="solution-image">
+                        <img src="assets/sol_utility_equipment_1769709019851.png" alt="Utility Equipment">
+                        <div class="solution-overlay"></div>
                     </div>
-                    <h3>Water Tank Staging</h3>
-                    <p>Robust staging structures for elevated water tanks and reservoirs</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> High capacity designs</li>
-                        <li><i class="fas fa-check"></i> Seismic compliant</li>
-                        <li><i class="fas fa-check"></i> Corrosion resistant</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solution-content glass-card">
+                        <div class="product-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Utility Equipment</h3>
+                        <p>Essential equipment for power distribution and utility management.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Transformers & Accessories</li>
+                            <li><i class="fas fa-check"></i> Isolators & Disconnectors</li>
+                            <li><i class="fas fa-check"></i> Control Panels</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="product-card glass-card hidden" data-category="infrastructure">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <rect x="20" y="60" width="60" height="35" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <polygon points="10,60 50,20 90,60" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="50" y1="20" x2="50" y2="5" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="50" cy="5" r="3" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3>Solar Irrigation Structures</h3>
-                    <p>Complete structural solutions for solar-powered irrigation projects</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Agricultural optimized</li>
-                        <li><i class="fas fa-check"></i> Weather resistant</li>
-                        <li><i class="fas fa-check"></i> Easy installation</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Emerging Products -->
-                <div class="product-card glass-card hidden" data-category="emerging">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <line x1="5" y1="60" x2="30" y2="60" stroke="currentColor" stroke-width="3"/>
-                            <line x1="70" y1="60" x2="95" y2="60" stroke="currentColor" stroke-width="3"/>
-                            <path d="M30,60 Q50,30 70,60" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="30" y1="60" x2="30" y2="80" stroke="currentColor" stroke-width="3"/>
-                            <line x1="70" y1="60" x2="70" y2="80" stroke="currentColor" stroke-width="3"/>
-                        </svg>
-                    </div>
-                    <h3>Modular Bridges</h3>
-                    <p>Military-grade modular bridges for BRO, Army & Navy applications</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Rapid deployment</li>
-                        <li><i class="fas fa-check"></i> Heavy load capacity</li>
-                        <li><i class="fas fa-check"></i> All-terrain design</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="product-card glass-card hidden" data-category="emerging">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <path d="M10,70 L30,70 L40,50 L60,50 L70,30 L90,30" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <polygon points="90,30 80,20 80,40" fill="currentColor"/>
-                            <line x1="30" y1="70" x2="30" y2="85" stroke="currentColor" stroke-width="2"/>
-                            <line x1="60" y1="50" x2="60" y2="85" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Shipbuilding Blocks</h3>
-                    <p>Precision-engineered building blocks for shipyard construction</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Marine grade steel</li>
-                        <li><i class="fas fa-check"></i> Precision fabrication</li>
-                        <li><i class="fas fa-check"></i> Class approved</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="product-card glass-card hidden" data-category="emerging">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <rect x="10" y="50" width="80" height="40" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <polygon points="10,50 50,15 90,50" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <rect x="40" y="65" width="20" height="25" fill="none" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Pre-Engineered Buildings</h3>
-                    <p>Custom PEB solutions for industrial and commercial applications</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Fast erection</li>
-                        <li><i class="fas fa-check"></i> Cost effective</li>
-                        <li><i class="fas fa-check"></i> Customizable spans</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="product-card glass-card hidden" data-category="emerging">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 100 100" class="product-svg">
-                            <rect x="20" y="20" width="60" height="60" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <line x1="20" y1="35" x2="80" y2="35" stroke="currentColor" stroke-width="2"/>
-                            <line x1="20" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2"/>
-                            <line x1="20" y1="65" x2="80" y2="65" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="50" cy="10" r="5" fill="currentColor"/>
-                            <line x1="50" y1="15" x2="50" y2="20" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>RDSO Structures</h3>
-                    <p>Heavy engineered structures meeting RDSO specifications for railways</p>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> RDSO approved</li>
-                        <li><i class="fas fa-check"></i> Heavy duty grade</li>
-                        <li><i class="fas fa-check"></i> Nationwide supply</li>
-                    </ul>
-                    <a href="#" class="product-link">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
             </div>
         </div>
         <div class="organic-shape products-shape-1"></div>
@@ -443,7 +319,8 @@
                 <div class="why-main glass-card">
                     <div class="why-main-content">
                         <h3>The PLA Advantage</h3>
-                        <p>Infrastructure companies don't want multiple vendors — they want reliable quality, timely delivery, and fair pricing from one source. That's exactly what PLA delivers.</p>
+                        <p>Infrastructure companies don't want multiple vendors — they want reliable quality, timely
+                            delivery, and fair pricing from one source. That's exactly what PLA delivers.</p>
                         <div class="why-stats">
                             <div class="why-stat">
                                 <span class="why-stat-number">1</span>
@@ -512,53 +389,121 @@
                 <h2 class="section-title">Powering Every Sector</h2>
                 <p class="section-subtitle">Trusted by India's leading infrastructure organizations</p>
             </div>
+
             <div class="sectors-grid">
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-building"></i>
+                <!-- PSUs -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_psu_1769709051235.png" alt="PSUs" class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="far fa-building"></i>
+                        </div>
+                        <h3>PSUs & DPSUs</h3>
+                        <p>Serving public sector undertakings with reliable infrastructure components.</p>
                     </div>
-                    <h3>PSUs & DPSUs</h3>
-                    <p>Serving public sector undertakings with reliable infrastructure components</p>
                 </div>
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-plug"></i>
+
+                <!-- Utilities -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_utility_1769709066614.png" alt="Utility Companies" class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Utility Companies</h3>
+                        <p>Power distribution and transmission infrastructure solutions.</p>
                     </div>
-                    <h3>Utility Companies</h3>
-                    <p>Power distribution and transmission infrastructure solutions</p>
                 </div>
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-hard-hat"></i>
+
+                <!-- EPC -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_epc_1769709084510.png" alt="EPC Contractors" class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3>EPC Contractors</h3>
+                        <p>Complete material supply for large-scale infrastructure projects.</p>
                     </div>
-                    <h3>EPC Contractors</h3>
-                    <p>Complete material supply for large-scale infrastructure projects</p>
                 </div>
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-sun"></i>
+
+                <!-- Solar -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_solar_1769709101019.png" alt="Solar Installers" class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Solar Installers</h3>
+                        <p>C channels and mounting structures for solar power projects.</p>
                     </div>
-                    <h3>Solar Installers</h3>
-                    <p>C channels and mounting structures for solar power projects</p>
                 </div>
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-truck"></i>
+
+                <!-- Traders -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_traders_1769709120632.png" alt="Traders" class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Traders & Stockists</h3>
+                        <p>Bulk supply partnerships for distribution networks.</p>
                     </div>
-                    <h3>Traders & Stockists</h3>
-                    <p>Bulk supply partnerships for distribution networks</p>
                 </div>
-                <div class="sector-card glass-card">
-                    <div class="sector-icon">
-                        <i class="fas fa-warehouse"></i>
+
+                <!-- Industrial -->
+                <div class="sector-card-new">
+                    <img src="assets/sol_sectors_industrial_1769709135625.png" alt="Industrial Buyers"
+                        class="sector-bg">
+                    <div class="sector-overlay">
+                        <div class="sector-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h3>Industrial Buyers</h3>
+                        <p>Custom fabrication for large industrial requirements.</p>
                     </div>
-                    <h3>Industrial Buyers</h3>
-                    <p>Custom fabrication for large industrial requirements</p>
+                </div>
+            </div>
+
+            <div class="sectors-shape-1 organic-shape"></div>
+            <div class="sectors-shape-2 organic-shape"></div>
+        </div>
+    </section>
+
+    <!-- Certification and Testing Section (New) -->
+    <section id="certification" class="certification-section">
+        <div class="container">
+            <div class="certification-wrapper glass-card">
+                <div class="certification-image">
+                    <img src="assets/sol_certification_1769709152991.png" alt="Quality Certification">
+                </div>
+                <div class="certification-content">
+                    <span class="section-tag glass-card-subtle">Quality Assurance</span>
+                    <h2 class="section-title">Certified Excellence</h2>
+                    <p>At ENSOL, quality is non-negotiable. Our manufacturing processes and products undergo rigorous
+                        testing to meet international standards.</p>
+
+                    <div class="cert-badges-grid">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>ISO 9001:2015</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-check-double"></i>
+                            <span>BIS Certified</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-flask"></i>
+                            <span>NABL Accredited Lab</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-globe"></i>
+                            <span>International Standards</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="organic-shape sectors-shape-1"></div>
-        <div class="organic-shape sectors-shape-2"></div>
     </section>
 
     <!-- CTA Section -->
@@ -567,7 +512,8 @@
             <div class="cta-content glass-card">
                 <div class="cta-text">
                     <h2>Ready to Simplify Your Procurement?</h2>
-                    <p>Join hundreds of infrastructure companies who trust PLA as their single-source manufacturing partner.</p>
+                    <p>Join hundreds of infrastructure companies who trust PLA as their single-source manufacturing
+                        partner.</p>
                 </div>
                 <div class="cta-actions">
                     <a href="#contact" class="btn btn-primary">
@@ -659,7 +605,8 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your requirements..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Send Inquiry</span>
@@ -730,4 +677,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

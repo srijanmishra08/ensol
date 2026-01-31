@@ -36,6 +36,15 @@ function initNavigation() {
             nav.classList.remove('scrolled');
         }
 
+        // Smart Navbar (Hide on down, Show on up)
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            // Scrolling Down
+            nav.classList.add('nav-hidden');
+        } else {
+            // Scrolling Up
+            nav.classList.remove('nav-hidden');
+        }
+
         lastScroll = currentScroll;
     });
 

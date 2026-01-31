@@ -6,14 +6,22 @@
 /* CSS Custom Properties (Design Tokens) */
 :root {
     /* Brand Colors - ENSOL Official Palette */
-    --primary: #e1002e;
-    --primary-dark: #b8001f;
-    --primary-light: #e1002e;
-    --secondary: #333333;
-    --secondary-light: #555555;
+    --primary: #e90f2b;
+    --primary-dark: #B50015;
+    --primary-light: #FF4D63;
+    --secondary: #000000;
+    --secondary-light: #333333;
 
     /* Neutral Colors - ENSOL Palette */
-    --dark: #111111;
+    --neutral-cream: #EDEBE2;
+    --neutral-light: #DADDDF;
+    --neutral-mid: #C1C3C2;
+    --neutral-warm: #DBD8C7;
+    --neutral-dark: #B6BBBB;
+    --neutral-darker: #85898A;
+
+    /* Text Colors */
+    --dark: #000000;
     --dark-blue: #111111;
     --navy: #111111;
     --gray-900: #111111;
@@ -21,16 +29,16 @@
     --gray-700: #333333;
     --gray-600: #555555;
     --gray-500: #777777;
-    --gray-400: #555555;
-    --gray-300: #333333;
-    --gray-200: #222222;
-    --gray-100: #111111;
+    --gray-400: #B6BBBB;
+    --gray-300: #C1C3C2;
+    --gray-200: #DADDDF;
+    --gray-100: #EDEBE2;
     --white: #ffffff;
 
     /* Accent Colors */
     --accent-green: #2e7d32;
-    --accent-yellow: #e1002e;
-    --accent-red: #e1002e;
+    --accent-yellow: #fbc02d;
+    --accent-red: #e90f2b;
 
     /* Glassmorphism - Updated for light background */
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -269,6 +277,10 @@ ol {
     transition: var(--transition-base);
 }
 
+.glass-nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
 .glass-nav.scrolled {
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -384,7 +396,7 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px var(--space-lg) var(--space-3xl);
+    padding: 120px var(--space-lg) 100px;
     overflow: hidden;
 }
 
@@ -607,10 +619,30 @@ ol {
     margin-top: var(--space-xs);
 }
 
+.stat-value-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    line-height: 1;
+}
+
+.stat-value-wrapper .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e1002e;
+}
+
+.stat-value-wrapper .stat-plus,
+.stat-value-wrapper .stat-unit {
+    font-size: 1.5rem;
+    color: #e1002e;
+    font-weight: 600;
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: var(--space-2xl);
+    bottom: var(--space-lg);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -731,10 +763,10 @@ section {
 }
 
 .about-text .lead {
-    font-size: 1.25rem;
-    color: #333333;
+    font-size: 1rem;
+    color: #555555;
     margin-bottom: var(--space-lg);
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .about-text p {
@@ -898,6 +930,27 @@ section {
 
 .products-section {
     background: transparent;
+}
+
+.product-features {
+    margin-top: var(--space-md);
+}
+
+.product-features li {
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+}
+
+.product-features li i {
+    color: var(--primary);
+    margin-right: var(--space-sm);
+}
+
+.product-icon {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
 }
 
 .solutions-list {

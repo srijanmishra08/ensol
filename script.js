@@ -56,6 +56,21 @@ function initNavigation() {
         });
     }
 
+    // Mobile dropdown toggle
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        if (trigger) {
+            trigger.addEventListener('click', (e) => {
+                // Only toggle on mobile
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    });
+
     // Active link highlighting
     const sections = document.querySelectorAll('section[id]');
     const navLinksList = document.querySelectorAll('.nav-links a');

@@ -247,40 +247,55 @@ function initFormHandling() {
     const form = document.querySelector('.contact-form');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         // Get form data
         const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
 
         // Simple validation
-        if (!data.name || !data.email) {
+        const name = formData.get('name');
+        const email = formData.get('email');
+        
+        if (!name || !email) {
             showNotification('Please fill in all required fields', 'error');
             return;
         }
 
-        // Simulate form submission
+        // Show loading state
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
 
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate API call
-        setTimeout(() => {
-            submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-            submitBtn.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)';
+        try {
+            // Actually submit to Web3Forms
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
 
-            showNotification('Thank you! We\'ll get back to you soon.', 'success');
-            form.reset();
+            const result = await response.json();
 
+            if (result.success) {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)';
+                showNotification('Thank you! We\'ll get back to you soon.', 'success');
+                form.reset();
+            } else {
+                throw new Error(result.message || 'Submission failed');
+            }
+        } catch (error) {
+            showNotification('Something went wrong. Please try again.', 'error');
+            console.error('Form submission error:', error);
+        } finally {
             setTimeout(() => {
                 submitBtn.innerHTML = originalText;
                 submitBtn.style.background = '';
                 submitBtn.disabled = false;
             }, 3000);
-        }, 1500);
+        }
     });
 
     // Input focus effects
